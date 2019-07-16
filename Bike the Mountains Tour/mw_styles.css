@@ -1,0 +1,91 @@
+﻿@charset "utf-8"
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 2
+   
+   Bike the Mountains Tour Style Sheet
+    Author: Mike Bennett
+    Date:   4/11
+   
+   Filename: mw_styles.css
+
+*/
+/* Structural Styles */
+html{
+   background-color: rgba(227, 210, 173, 1);
+   font-family: 'Century Gothic', sans-serif;
+}
+body > footer{
+  color: rgb(208, 184, 109);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+address{
+  font-style: normal;
+  font-size: 0.9em;
+  float: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Heading Styles */
+h1{font-weight: normal;}
+h2{font-weight: normal;}
+
+/* Navigation Styles */
+nav > ul > li{
+  line-height: 2em;
+  font-size: 0.9em;
+}
+nav > ul > li > a:link, nav > ul > li > a:unvisited{
+  text-decoration: none;
+  color: rgb(212, 35, 25);
+}
+nav > ul > li > a:link, nav > ul > li > a:visited{
+  text-decoration: none;
+  color: rgb(212, 35, 25);
+}
+
+/* Article Styles */
+article#tour_summary h1{
+  font-size: 2.2em;
+  letter-spacing: 0.2em;
+}
+article#tour_summary p{
+  font-size: 1.1em;
+}
+article#tour_summary p::first-of-type p::first-line{
+  font-size: 1.2em;
+  font-variant: small-caps;
+}
+
+/* Aside Styles */
+aside#tour_itinerary header > h1{
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+}
+aside#tour_itinerary h2{
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+}
+aside#tour_itinerary p{
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+}
+aside#tour_itinerary h2:nth-of-type(odd){
+  color: gray;
+}
+aside#tour_itinerary h2:nth-of-type(even){
+  color: blue;
+}
+
+/* Blockquote Styles */
+Blockquote {
+  background-color: rgb(173,189, 227);
+  color: rgba(255, 255, 255, 0.65);
+}
+Blockquote > p{
+  padding: 2.5px 10px;
+}
+
