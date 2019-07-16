@@ -1,2 +1,2 @@
 # Web_Developer
-This is the home for web development project I've completed
+This is the home for web development projects I've successfully delivered.
