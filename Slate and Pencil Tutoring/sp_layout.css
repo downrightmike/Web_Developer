@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   Author: mike bennett
+   Date:   4/13 
+   
+   Filename: sp_layout.css
+
+*/
+
+/* Window and Body Styles */
+html{
+  height: 100%;    
+}
+body{
+  width:95%;
+  min-width: 640px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height:100%;
+}
+header{
+  box-sizing: border-box;
+}
+ul  {  box-sizing: border-box;}
+nav {  box-sizing: border-box;}
+ a  {  box-sizing: border-box;}
+
+/* Row Styles */
+row::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Page Header Styles */
+body > header > img{
+  display: block;
+  width: 70%;
+  float: left;
+}
+body > header > nav {
+  float: left;
+  padding-right: 2%;
+  padding-left: 2%;
+  width: 30%;
+} 
+body > header > nav > ul > li > a {
+  display: block;
+  width: 100%;
+}
+body > header::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Horizontal Navigation List Styles */
+body > nav > ul > li {
+  display: block;
+  width: 12.5%;
+  float: left;
+}
+body > nav::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+hr{
+  width: 50%;
+}
+footer{
+  clear: left;
+  clear: right;
+}
+footer::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Topics Styles */
+ul#topics{
+  display: block;
+  width: 100%;
+  float: left;
+  margin-left: 7.75%; 
+  margin-right:  auto;
+}
+ul#topics > li{
+display: block;
+  width: 20%;
+  float: left;
+  margin-left: 0%;
+  margin-right: 1.5%;
+  text-align:left;
+}
+ul#topics > li > img{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: 7.75%;
+}
+ul#topics::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+/* HR Styles */
+
+hr {
+    width: 50%;
+}
+
+
+/* Customer Comment Styles */
+ul#comments {
+  width:75%;
+  margin: 40px auto;
+}
+ul#comments > li{
+  display: block;
+  width:50%;
+  float: left;
+  margin-bottom: 30px;
+}
+ul#comments img{
+  display: block;
+  width: 20%;
+  float: left;
+  margin: 0% 5%;
+}
+ul#comments p{
+  
+  width: 70%;
+  float: left;
+}
+ul#comments::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+/* Footer Styles */
+footer {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
